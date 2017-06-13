@@ -2,6 +2,6 @@
 class User < ApplicationRecord
   include Authentication
   has_many :examples
-  belongs_to :repairs
-  belongs_to :cars
+  has_many :cars
+  has_many :repairs, through: :cars
 end

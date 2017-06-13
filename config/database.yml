@@ -1,4 +1,4 @@
-<% project_name = 'car-repairs-log-api-template' %>
+<% project_name = 'car-log-api' %>
 
 default: &default
   adapter: postgresql

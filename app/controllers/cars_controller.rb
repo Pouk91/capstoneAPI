@@ -1,6 +1,6 @@
 class CarsController < ApplicationController
   before_action :set_car, only: [:show, :update, :destroy]
-
+  before_action :validate_user
   # GET /cars
   def index
     @cars = current_user.cars.all

@@ -1,5 +1,5 @@
 class Repair < ApplicationRecord
-  has_many :users
-  has_many :cars, through: :users
-
+  belongs_to :cars
+  belongs_to :users
+  validates :repairname, :repairdate, :suggestedmaintenancedate, :repaircost, :repaircomment, presence: true
 end
